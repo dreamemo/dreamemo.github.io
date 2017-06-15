@@ -6,25 +6,17 @@ app.controller('MainCtrl', [
 function($scope, $state){
 	$scope.go = function(option, view) {
 		$('.header-tab').removeClass("active");
-		$('.home-icon').removeClass("active");
 		if(option == "home") {
 			$state.go("home");
-			$('.home-icon').css({"color": "red"});
-		} else if(option == "about-us") {
-			$state.go("aboutus");
-			$('#aboutus-tab').addClass("active");
-		} else if(option == "tracks") {
-			$state.go("tracks");
-			$('#tracks-tab').addClass("active");
-		} else if(option == "blog") {
-			$state.go("blog");
-			$('#blog-tab').addClass("active");
-		} else if(option == "resources") {
-			$state.go("resources");
-			$('#resources-tab').addClass("active");
-		} else if(option == "login") {
-			$state.go("login");
-			$('#login-tab').addClass("active");
+		} else if(option == "about") {
+			$state.go("about");
+			$('#about-tab').addClass("active");
+		} else if(option == "faq") {
+			$state.go("faq");
+			$('#faq-tab').addClass("active");
+		} else if(option == "contact") {
+			$state.go("contact");
+			$('#contact-tab').addClass("active");
 		}
 	}
 }]);
@@ -40,29 +32,19 @@ function($stateProvider, $urlRouterProvider) {
 		templateUrl: '/home.html',
 		controller: 'MainCtrl'
 	})
-	.state('aboutus', {
-		url: '/aboutus',
-		templateUrl: '/aboutus.html',
+	.state('about', {
+		url: '/about',
+		templateUrl: '/about.html',
 		controller: 'MainCtrl'
 	})
-	.state('tracks', {
-		url: '/tracks',
-		templateUrl: '/tracks.html',
+	.state('faq', {
+		url: '/faq',
+		templateUrl: '/faq.html',
 		controller: 'MainCtrl'
 	})
-	.state('blog', {
-		url: '/blog',
-		templateUrl: '/blog.html',
-		controller: 'MainCtrl'
-	})
-	.state('resources', {
-		url: '/resources',
-		templateUrl: '/resources.html',
-		controller: 'MainCtrl'
-	})
-	.state('login', {
-		url: '/login',
-		templateUrl: '/login.html',
+	.state('contact', {
+		url: '/contact',
+		templateUrl: '/contact.html',
 		controller: 'MainCtrl'
 	});
 

@@ -16,18 +16,25 @@
 				<a class="header-tab" ng-click="go('home')" class="navbar-brand"><span class="glyphicon glyphicon-home home-icon"></span>Dreamemo</a>
 			</div>
 			<ul class="header-navbar nav navbar-nav navbar-right">
-				<li class="header-tab" id="aboutus-tab"><a ng-click="go('about-us')">About Us</a></li>
+				<li class="header-tab" id="about-tab"><span ng-click="go('about')">About</span></li>
+				<li class="header-tab" id="faq-tab"><span ng-click="go('faq')">FAQ</span></li>
+				<li class="header-tab" id="contact-tab"><span ng-click="go('contact')">Contact</span></li>
 			</ul>
 		</div>
 	</nav>
 	<ui-view></ui-view>
 	<script type="text/ng-template" id="/home.html">
+		<div class="home-page">
+		
+		</div>
+	</script>
+	<script type="text/ng-template" id="/about.html">
 		
 	</script>
-	<script type="text/ng-template" id="/aboutus.html">
+	<script type="text/ng-template" id="/faq.html">
 		
 	</script>
-	<script type="text/ng-template" id="/blog.html">
+	<script type="text/ng-template" id="/contact.html">
 		
 	</script>
   </body>
