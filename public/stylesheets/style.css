@@ -18,7 +18,8 @@ body {
 }
 
 .navbar .header-tab {
-	color: #eee;
+	color: #ddd;
+	padding: 0 100px 0 0;
 }
 
 .navbar .header-tab:hover {
@@ -31,8 +32,22 @@ body {
 	color: #fff;
 }
 
-.home-page {
+.navbar .header-tab#home-tab {
+	font-weight: bold;
+	font-family: 'Satisfy', cursive;
+}
+
+.navbar .header-tab#hometab .app-icon {
+	width: 50px;
+	height: 50px;
+}
+
+.page {
 	height: 500px;
 	text-align: center;
+}
+
+.page bg {
+	position: fixed;
 	background-image: url("../images/night-sky.jpg");
 }
