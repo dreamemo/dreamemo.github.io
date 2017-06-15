@@ -24,7 +24,7 @@ function($scope, $state){
 	$scope.scrnIndex = 1;
 	$scope.prev = function() {
 		$scope.scrnIndex--;
-		if($scope.scrnIndex == -1) $scope.scrnIndex = 4;
+		if($scope.scrnIndex == 0) $scope.scrnIndex = 4;
 	}
 	$scope.next = function() {
 		$scope.scrnIndex++;
