@@ -27,9 +27,11 @@
 	<script type="text/ng-template" id="/home.html">
 		<div class="page">
 			<div class="bg"></div>
-			<div class="title">Calm. Ambience. Dreams.</div>
-			<div class="subtitle">Dreamemo is your personal dream journal</div>
-			<img src="../public/images/available-on-app-store.png" class="app-store">
+			<div class="col-xs-8">
+				<div class="title">Calm. Ambience. Dreams.</div>
+				<div class="subtitle">Dreamemo is your personal dream journal where you can record daily entries about your dreams, feelings, and moods.</div>
+				<img src="../public/images/available-on-app-store.png" class="app-store">
+			</div>
 		</div>
 	</script>
 	<script type="text/ng-template" id="/about.html">
@@ -40,11 +42,18 @@
 	<script type="text/ng-template" id="/faq.html">
 		<div class="page">
 			<div class="bg"></div>
+			<ul class="faq-list">
+				<li ng-repeat="question in questions" class="question-container">
+					<div class="question">{{ question.question }}</div>
+					<div class="answer">{{ question.answer }}</div>
+				</li>
+			</ul>
 		</div>
 	</script>
 	<script type="text/ng-template" id="/contact.html">
 		<div class="page">
 			<div class="bg"></div>
+			<div class="contact">Email: dreamemo.2017@gmail.com</div>
 		</div>
 	</script>
   </body>

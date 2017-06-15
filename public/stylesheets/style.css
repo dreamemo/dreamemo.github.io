@@ -61,7 +61,7 @@ body {
 	font-size: 2em;
 	font-weight: bold;
 	font-family: 'Satisfy', cursive;
-	padding: 50px;
+	padding: 20px 50px;
 	position: relative;
     top: 150px;
 }
@@ -69,6 +69,7 @@ body {
 .page .subtitle {
 	position: relative;
     top: 150px;
+    padding: 20px;
 	font-size: 1.25em;
 }
 
