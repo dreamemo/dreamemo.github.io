@@ -1,0 +1,495 @@
+body {
+  padding: 0px;
+  font: 14px Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #000;
+}
+
+a:hover, a:active, a:focus {
+	color: red;
+	text-decoration: none;
+	background: none;
+}
+
+ul li {
+	list-style: none;
+}
+
+.row {
+	margin: 0px;
+}
+
+.navbar.header {
+	z-index: 2;
+	position: fixed;
+	background: #fff;
+	border-radius: 0px;
+	width: 100%;
+	margin: 0px;
+	padding: 10px;
+}
+
+.navbar .navbar-header {
+	position: relative;
+	top: -10px;
+	font-size: 1.5em;
+	padding: 15px;
+}
+
+.navbar .header-tab {
+	position: relative;
+	top: 12px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	margin-bottom: 5px;
+}
+
+.navbar .header-tab:hover {
+	cursor: pointer;
+}
+
+.navbar .header-tab.active {
+	cursor: pointer;
+	background: #fff;
+	margin-bottom: 0px;
+	border-bottom: 5px solid red;
+}
+
+.footer {
+	position: relative;
+	top: 75px;
+	padding: 25px 40px;
+	background: #fff;
+}
+
+.footer div {
+	display: inline-block;
+}
+
+.footer img {
+	height: 25px;
+	width: 25px;
+}
+
+.footer .brand {
+	text-transform: uppercase;
+}
+
+.footer .contact {
+	position: absolute;
+	right: 140px;
+}
+
+.footer .social {
+	float: right;
+}
+
+.col-xs-4 {
+	text-align: center;
+	font-size: 1.5em;
+	color: #000;
+	text-transform: uppercase;
+}
+
+.btn-box {
+	font-size: 1.25em;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	background: none;
+	padding: 10px 30px;
+	margin: 10px;
+	color: #fff;
+	border: 3px solid #fff;
+}
+
+.btn-box:hover, .btn-box:active, .btn-box:focus {
+	color: red;
+	border: 3px solid red;
+}
+
+.page-title {
+	position: relative;
+	top: 100px;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 64pt;
+	font-family: "Courier New";
+	font-weight: bold;
+	text-transform: uppercase;
+    color: #fff;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.home-page .page-title {
+	border-right: .1em solid;
+	width: 11ch;
+	animation: typing 5s steps(11, end),
+	           blink-caret .5s step-end infinite alternate;
+}
+
+.aboutus-page .page-title {
+	border-right: .1em solid;
+	width: 9ch;
+	animation: typing 5s steps(9, end),
+	           blink-caret .5s step-end infinite alternate;
+}
+
+.tracks-page .page-title {
+	border-right: .1em solid;
+	width: 8ch;
+	animation: typing 5s steps(8, end),
+	           blink-caret .5s step-end infinite alternate;
+}
+
+.blog-page .page-title {
+	border-right: .1em solid;
+	width: 6ch;
+	animation: typing 5s steps(6, end),
+	           blink-caret .5s step-end infinite alternate;
+}
+
+.resources-page .page-title {
+	border-right: .1em solid;
+	width: 11ch;
+	animation: typing 5s steps(11, end),
+	           blink-caret .5s step-end infinite alternate;
+}
+
+@keyframes typing { from { width: 9px; } }
+@keyframes blink-caret { 50% { border-color: transparent; } }
+
+.page {
+	position: relative;
+    top: 75px;
+	width: 100%;
+	text-align: center;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.page-section {
+	padding: 40px;
+	letter-spacing: 2px;
+	background: #fff;
+	color: #000;
+}
+
+.page-section .page-heading {
+	font-size: 2em;
+	text-transform: uppercase;
+	padding: 10px;
+}
+
+.page-section .page-subheading {
+	font-size: 1.5em;
+	text-transform: uppercase;
+	padding: 10px;
+}
+
+.page-list {
+	list-style: none;
+}
+
+.page-section .page-list {
+	color: #000;
+}
+
+.page-section .page-list li {
+	display: inline;
+}
+
+.page-section .page-list img {
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+}
+
+.page-section .officer-name {
+	font-size: 1.5em;
+	text-transform: uppercase;
+	padding: 10px;
+}
+
+.page-section .officer-position {
+	font-size: 1.25em;
+	margin-bottom: 5px;
+}
+
+.page-section .officer-bio {
+	line-height: 16pt;
+	padding: 5px;
+    margin: 5px;
+    margin-bottom: 10px;
+}
+
+.home-page {
+	height: 500px;
+	text-align: center;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../images/desk-workspace.jpg");
+}
+
+.aboutus-page {
+	height: 400px;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../images/coding.jpg");
+}
+
+.tracks-page {
+	height: 250px;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../images/programming.jpg");
+}
+
+.blog-page {
+	height: 250px;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../images/blog.jpg");
+}
+
+.resources-page {
+	height: 250px;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../images/resources.jpg");
+}
+
+.page-info {
+	padding: 40px;
+	background: #fa9090;
+	letter-spacing: 2px;
+	color: #000;
+}
+
+.page-info .page-info-icon {
+	display: block;
+	width: 150px;
+	height: 150px;
+	background: #fff;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 10px;
+	border: 20px solid #fff;
+	border-radius: 50%;
+}
+
+.page-info .page-info-icon img {
+	width: 100px;
+	height: 100px;
+}
+
+.page-info .page-heading {
+	font-size: 2em;
+	text-transform: uppercase;
+	padding: 10px;
+	color: #000;
+}
+
+.page-info .page-subheading {
+	font-size: 1.25em;
+	text-transform: uppercase;
+	padding: 10px;
+	color: #000;
+}
+
+.page-info .number {
+	display: inline-block;
+	font-size: 2em;
+	color: #fff;
+}
+
+.page-info .page-subheading a {
+	padding: 10px;
+	border-bottom: 5px solid #fff;
+}
+
+.page-info .page-subheading a:hover, .page-info .page-subheading a:active, .page-info .page-subheading a:focus {
+	cursor: pointer;
+	border-bottom: 5px solid red;
+}
+
+.page-info p {
+	margin-top: 20px;
+	font-size: 0.65em;
+	text-transform: none;
+	line-height: 16pt;
+}
+
+.page-description {
+	padding: 40px;
+	background: #fff;
+	letter-spacing: 2px;
+	text-align: center;
+	line-height: 16pt;
+}
+
+.page-description .page-heading {
+	font-size: 2em;
+	color: #000;
+	text-transform: uppercase;
+	padding: 10px;
+	line-height: 2em;
+}
+
+.page-description .page-subheading {
+	color: red;
+	font-size: 1.25em;
+	padding: 10px;
+}
+
+.page-subsection {
+	position: relative;
+    top: 75px;
+	height: 250px;
+	margin: 20px 0px 0px 0px;
+	padding: 10px;
+	color: #fff;
+	text-align: center;
+	letter-spacing: 2px;
+	line-height: 16pt;
+}
+
+.page-subsection span.glyphicon {
+	font-size: x-large;
+}
+
+.page-subsection.teach {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../images/classroom.jpg");
+	background-repeat: no-repeat;
+	background-position: 0% 75%;
+	background-size: 100%;
+}
+
+.page-subsection.engage {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../images/technovation.jpg");
+	background-repeat: no-repeat;
+	background-position: 0% 50%;
+	background-size: 100%;
+}
+
+.page-subsection.inspire {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../images/public-speaking.jpg");
+	background-repeat: no-repeat;
+	background-position: 0% 75%;
+	background-size: 100%;
+}
+
+.page-subsection h3 {
+	text-transform: uppercase;
+	padding: 20px;
+	margin-bottom: 0px;
+}
+
+.page-subsection p {
+	font-size: 1.25em;
+	padding: 20px;
+}
+
+.page-description p {
+	width: 75%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.page-description button {
+	color: #000;
+	border: 3px solid #000;
+}
+
+.page-backdrop {
+	height: 300px;
+	padding: 40px;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../images/designer-workspace.jpg");
+	background-position: 0% 40%;
+	line-height: 26pt;
+	letter-spacing: 2px;
+	text-align: center;
+}
+
+.page-backdrop .page-heading {
+	font-size: 2em;
+	color: #fff;
+	text-transform: uppercase;
+	padding: 10px;
+}
+
+.page-backdrop .page-subheading {
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 1.5em;
+	color: #fff;
+	padding: 10px;
+}
+
+.blogs {
+	padding: 40px;
+	color: #000;
+	letter-spacing: 2px;
+}
+
+.blogs .page-list li {
+	padding: 20px;
+	margin: 0px 0px 20px 0px;
+	width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    background: #eee;
+    border-radius: 20px;
+}
+
+.blogs .page-list img {
+	width: 100%;
+}
+
+.blogs .page-list .post-title {
+	font-size: 2em;
+	text-transform: uppercase;
+	padding: 20px 0px 0px 0px;
+}
+
+.blogs .page-list .post-time {
+	font-size: 1.25em;
+	color: red;
+	padding: 10px;
+}
+
+.blogs .page-list .post-preview {
+	text-overflow: ellipsis;
+}
+
+.navbar.sidebar {
+	z-index: 1;
+	display: block;
+	position: relative;
+	padding: 10px;
+	margin-top: 40px;
+	width: 15%;
+}
+
+.navbar.sidebar .sidebar-tab {
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	width: 100%;
+	margin-right: 5px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	cursor: pointer;
+}
+
+.navbar.sidebar .sidebar-tab.active {
+	cursor: pointer;
+	margin-right: 0px;
+	border-right: 5px solid red;
+	border-bottom: 0px;
+}
+
+.tracks {
+	position: relative;
+    top: -437px;
+}
+
+.tracks .page {
+	width: 85%;
+    left: 15%;
+}
