@@ -25,10 +25,12 @@ function($scope, $state){
 	$scope.prev = function() {
 		$scope.scrnIndex--;
 		if($scope.scrnIndex == 0) $scope.scrnIndex = 4;
+		$scope.showScrn($scope.scrnIndex);
 	}
 	$scope.next = function() {
 		$scope.scrnIndex++;
 		if($scope.scrnIndex == 5) $scope.scrnIndex = 1;
+		$scope.showScrn($scope.scrnIndex);
 	}
 	$scope.showScrn = function(index) {
 		$('.screenshot').removeClass("active");
