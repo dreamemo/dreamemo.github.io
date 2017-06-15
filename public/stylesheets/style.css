@@ -98,3 +98,19 @@ body {
 .page .scrn-buttons .scrn-btn img {
 	width: 40px;
 }
+
+.page .faq-list {
+	position: relative;
+    top: 100px;
+    padding: 50px;
+    color: #fff;
+    list-style-type: decimal;
+}
+
+.page .faq-list .question-container {
+	padding: 20px 10px;
+}
+
+.page .faq-list .question-container div {
+	text-align: left;
+}
