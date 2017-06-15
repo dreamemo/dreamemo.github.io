@@ -67,6 +67,10 @@ body {
     top: 150px;
 }
 
+.page .title.title-left {
+	text-align: left;
+}
+
 .page .subtitle {
 	position: relative;
     top: 150px;
@@ -119,4 +123,11 @@ body {
 
 .page .faq-list .question-container div {
 	text-align: left;
+}
+
+.page .contact {
+	position: relative;
+    top: 100px;
+    padding: 50px;
+    color: #fff;
 }
