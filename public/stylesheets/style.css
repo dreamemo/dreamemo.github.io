@@ -49,5 +49,5 @@ body {
 
 .page .bg {
 	position: fixed;
-	background-image: url("../images/night-sky.jpg");
+	background-image: url("../public/images/night-sky.jpg");
 }
