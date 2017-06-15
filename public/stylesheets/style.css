@@ -19,7 +19,8 @@ body {
 
 .navbar .header-tab {
 	color: #ddd;
-	padding: 0 100px 0 0;
+	font-size: 1.25em;
+	padding: 15px 100px 0 0;
 }
 
 .navbar .header-tab:hover {
@@ -33,21 +34,44 @@ body {
 }
 
 .navbar .header-tab#home-tab {
+	font-size: 2em;
 	font-weight: bold;
 	font-family: 'Satisfy', cursive;
 }
 
-.navbar .app-icon {
+.header-tab .app-icon {
 	width: 50px;
-	height: 50px;
+	border-radius: 50%;
+	margin-right: 10px;
 }
 
 .page {
-	height: 500px;
+	color: #fff;
 	text-align: center;
 }
 
 .page .bg {
 	position: fixed;
-	background-image: url("../public/images/night-sky.jpg");
+	background: url("../images/night-sky.jpg");
+}
+
+.page .title {
+	font-size: 2em;
+	font-weight: bold;
+	font-family: 'Satisfy', cursive;
+	padding: 50px;
+	position: relative;
+    top: 150px;
+}
+
+.page .subtitle {
+	position: relative;
+    top: 150px;
+	font-size: 1.25em;
+}
+
+.page .app-store {
+	position: relative;
+    top: 150px;
+	width: 200px;
 }
