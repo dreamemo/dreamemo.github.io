@@ -80,3 +80,21 @@ body {
     top: 150px;
 	width: 200px;
 }
+
+.page .screenshot {
+	display: none;
+	padding-top: 50px;
+	width: 300px;
+}
+
+.page .screenshot.active {
+	display: block;
+}
+
+.page .scrn-buttons .scrn-btn {
+	display: inline-block;
+}
+
+.page .scrn-buttons .scrn-btn img {
+	width: 40px;
+}

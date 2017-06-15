@@ -21,6 +21,23 @@ function($scope, $state){
 		}
 	}
 	
+	$scope.scrnIndex = 1;
+	$scope.prev = function() {
+		$scope.scrnIndex--;
+		if($scope.scrnIndex == -1) $scope.scrnIndex = 4;
+	}
+	$scope.next = function() {
+		$scope.scrnIndex++;
+		if($scope.scrnIndex == 5) $scope.scrnIndex = 1;
+	}
+	$scope.showScrn = function(index) {
+		$('.screenshot').removeClass("active");
+		if(index == 1) $('#scrn1').addClass("active");
+		else if(index == 2) $('#scrn2').addClass("active");
+		else if(index == 3) $('#scrn3').addClass("active");
+		else if(index == 4) $('#scrn4').addClass("active");
+	}
+	
 	$scope.questions = [
 		{question: "How do I create an account?", answer: "Before you create an account, make sure to have the app downloaded. Currently, it is only available on the Apple iPhone App Store. Once you have it downloaded, you can register with your full name, username, email, and password."},
 		{question: "How do I record an entry in my dream journal?", answer: "There are three buttons on the bottom. Click on the rightmost one that says 'Memo' underneath. Make sure to go to the tab that says 'Today' at the top. Then you can record whatever you want."},
