@@ -64,6 +64,10 @@ body {
 	font-family: 'Satisfy', cursive;
 	padding: 20px 50px;
 	position: relative;
+    top: 100px;
+}
+
+.page .title.main-title {
     top: 150px;
 }
 
@@ -130,4 +134,5 @@ body {
     top: 100px;
     padding: 50px;
     color: #fff;
+    text-align: left;
 }
