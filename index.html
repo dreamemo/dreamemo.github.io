@@ -17,7 +17,7 @@
 				<span class="header-tab" id="home-tab" ng-click="go('home')" class="navbar-brand"><img src="../public/images/icon.png" class="app-icon">Dreamemo</span>
 			</div>
 			<ul class="navbar-header nav navbar-nav">
-				<li class="header-tab" id="about-tab"><span ng-click="go('about')">About</span></li>
+				<!-- <li class="header-tab" id="about-tab"><span ng-click="go('about')">About</span></li> -->
 				<li class="header-tab" id="faq-tab"><span ng-click="go('faq')">FAQ</span></li>
 				<li class="header-tab" id="contact-tab"><span ng-click="go('contact')">Contact</span></li>
 			</ul>
@@ -31,6 +31,16 @@
 				<div class="title">Calm. Ambience. Dreams.</div>
 				<div class="subtitle">Dreamemo is your personal dream journal where you can record daily entries about your dreams, feelings, and moods.</div>
 				<img src="../public/images/available-on-app-store.png" class="app-store">
+			</div>
+			<div class="col-xs-4">
+				<img src="../public/images/screenshot1.png" class="active" id="scrn1">
+				<img src="../public/images/screenshot2.png" id="scrn2">
+				<img src="../public/images/screenshot3.png" id="scrn3">
+				<img src="../public/images/screenshot4.png" id="scrn4">
+				<div class="scrn-buttons">
+					<button type="button" class="scrn-btn" ng-click="prev()"><img src="../public/images/prev.png"></button>
+					<button type="button" class="scrn-btn" ng-click="next()"><img src="../public/images/next.png"></button>
+				</div>
 			</div>
 		</div>
 	</script>
