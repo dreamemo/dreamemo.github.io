@@ -119,7 +119,7 @@ body {
 .page .faq-list {
 	position: relative;
     top: 100px;
-    padding: 0 50px;
+    padding: 0 50px 50px 50px;
     color: #fff;
     list-style-type: decimal;
 }
