@@ -1,12 +1,13 @@
 body {
   padding: 0px;
-  font: 14px Roboto, Helvetica, Arial, sans-serif;
+  font: 12px Roboto, Helvetica, Arial, sans-serif;
+  letter-spacing: 2px;
 }
 
 .navbar.header {
 	z-index: 5;
     background: rgba(0, 0, 0, 1);
-    position: fixed;
+    position: absolute;
     border-radius: 0px;
     width: 100%;
     margin: 0px;
@@ -93,7 +94,7 @@ body {
 .page .screenshot {
 	display: none;
 	padding-top: 55px;
-	width: 300px;
+	width: 280px;
 }
 
 .page .screenshot.active {
@@ -102,7 +103,7 @@ body {
 
 .page .scrn-buttons {
 	display: block;
-    width: 300px;
+    width: 280px;
 }
 
 .page .scrn-buttons .scrn-btn {
