@@ -2,73 +2,217 @@
 <html>
   <head>
     <title>Dreamemo</title>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!-- Bootstrap css -->
+	<link rel="stylesheet" href="public/stylesheets/bootstrap.min.css">
+	<!-- Main css -->
     <link rel='stylesheet' href='public/stylesheets/style.css'/>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto|Satisfy|Courgette" rel="stylesheet">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="public/images/icon.png">
+        
+    <!-- Font -->
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500" rel="stylesheet">
+
+    <!-- Themify Icons -->
+    <link rel="stylesheet" href="public/stylesheets/themify-icons.css">
+    <!-- Owl carousel -->
+    <link rel="stylesheet" href="public/stylesheets/owl.carousel.min.css">
+    
+    <!-- Scripts -->
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.10/angular.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.10/angular-ui-router.js"></script>
-    <script src="public/javascripts/app.js"></script>
     
-    <link rel="icon" type="image/png" href="public/images/icon.png">
   </head>
-  <body ng-app="dreamemo" ng-controller="MainCtrl">
-  	<nav class="navbar header">
-		<div class="container-fluid">
-			<div class="navbar-header">
-				<span class="header-tab" id="home-tab" ng-click="go('home')" class="navbar-brand"><img src="../public/images/icon.png" class="app-icon">Dreamemo</span>
-			</div>
-			<ul class="navbar-header nav navbar-nav">
-				<!-- <li class="header-tab" id="about-tab"><span ng-click="go('about')">About</span></li> -->
-				<li class="header-tab" id="faq-tab"><span ng-click="go('faq')">FAQ</span></li>
-				<li class="header-tab" id="contact-tab"><span ng-click="go('contact')">Contact</span></li>
-			</ul>
-		</div>
-	</nav>
-	<ui-view></ui-view>
-	<script type="text/ng-template" id="/home.html">
-		<div class="page">
-			<div class="bg"></div>
-			<div class="col-xs-8">
-				<div class="title main-title">Calm. Ambience. Dreams.</div>
-				<div class="subtitle">Dreamemo is your personal dream journal where you can record daily entries about your dreams, feelings, and moods.</div>
-				<a href="https://itunes.apple.com/us/app/dreamemo/id1248719800?ls=1&mt=8"><img src="../public/images/available-on-app-store.png" class="app-store"></a>
-			</div>
-			<div class="col-xs-4">
-				<img src="../public/images/screenshot1.png" class="active screenshot" id="scrn1">
-				<img src="../public/images/screenshot2.png" class="screenshot" id="scrn2">
-				<img src="../public/images/screenshot3.png" class="screenshot" id="scrn3">
-				<img src="../public/images/screenshot4.png" class="screenshot" id="scrn4">
-				<div class="scrn-buttons">
-					<button type="button" class="scrn-btn" ng-click="prev()"><img src="../public/images/prev.png"></button>
-					<button type="button" class="scrn-btn" ng-click="next()" style="left: 250px;"><img src="../public/images/next.png"></button>
-				</div>
-			</div>
-		</div>
-	</script>
-	<script type="text/ng-template" id="/about.html">
-		<div class="page">
-			<div class="bg"></div>
-		</div>
-	</script>
-	<script type="text/ng-template" id="/faq.html">
-		<div class="page">
-			<div class="bg"></div>
-			<div class="title title-left">FAQ</div>
-			<ul class="faq-list">
-				<li ng-repeat="question in questions" class="question-container">
-					<div class="question">{{ question.question }}</div>
-					<div class="answer">{{ question.answer }}</div>
-				</li>
-			</ul>
-		</div>
-	</script>
-	<script type="text/ng-template" id="/contact.html">
-		<div class="page">
-			<div class="bg"></div>
-			<div class="title title-left">Contact</div>
-			<div class="contact">Email: <a href="mailto:dreamemo.2017@gmail.com">dreamemo.2017@gmail.com<a></div>
-		</div>
-	</script>
+  <body ng-app="dreamemo" ng-controller="MainCtrl" data-spy="scroll" data-target="#navbar" data-offset="30">
+  	
+	<!-- Nav Menu -->
+
+    <div class="nav-menu fixed-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <nav class="navbar navbar-dark navbar-expand-lg">
+                        <a class="navbar-brand" href="index.html"><img src="public/images/icon.png" class="img-fluid" alt="logo"> Dreamemo</a> 
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+                        <div class="collapse navbar-collapse" id="navbar">
+                            <ul class="navbar-nav ml-auto">
+                                <li class="nav-item"> <a class="nav-link active" href="#home">HOME <span class="sr-only">(current)</span></a> </li>
+                                <li class="nav-item"> <a class="nav-link" href="#features">FEATURES</a> </li>
+                                <li class="nav-item"> <a class="nav-link" href="#gallery">GALLERY</a> </li>
+                                <li class="nav-item"> <a class="nav-link" href="#faq">FAQ</a> </li>
+                                <li class="nav-item"> <a class="nav-link" href="mailto:juliasliu@berkeley.edu">CONTACT</a> </li>
+                                <li class="nav-item"> <a href="#download" class="btn btn-outline-light my-3 my-sm-0 ml-lg-3">Download</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <header class="bg-gradient" id="home">
+        <div class="container mt-5">
+            <h1>Calm. Ambience. Dreams</h1>
+            <p class="tagline">Dreamemo is your personal dream journal where you can record daily entries about your dreams, feelings, and moods.</p>
+        </div>
+        <div class="img-holder mt-3"><img src="public/images/screenshot1.png" alt="phone" class="img-fluid"></div>
+    </header>
+
+    <div class="section light-bg" id="features">
+
+
+        <div class="container">
+
+            <div class="section-title">
+                <small>HIGHLIGHTS</small>
+                <h3>Features you love</h3>
+            </div>
+
+
+            <div class="row">
+                <div class="col-12 col-lg-4">
+                    <div class="card features">
+                        <div class="card-body">
+                            <div class="media">
+                                <span class="ti-face-smile gradient-fill ti-3x mr-3"></span>
+                                <div class="media-body">
+                                    <h4 class="card-title">Dream journal</h4>
+                                    <p class="card-text">We provide a very intuitive interface for users to record their daily entries of their dreams into their personal dream journal. You can enter a descriptive narration of your <strong>dream</strong>, include your current <strong>feelings</strong>, and select your <strong>mood</strong> for the day.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <div class="card features">
+                        <div class="card-body">
+                            <div class="media">
+                                <span class="ti-settings gradient-fill ti-3x mr-3"></span>
+                                <div class="media-body">
+                                    <h4 class="card-title">Meditation</h4>
+                                    <p class="card-text">We also provide a feature users can use to relax and meditate. With soothing sounds of nature against the backdrop of a beautiful scenery, users can find solace and peace in different "environments," ranging from a cafe shop to a foresty jungle. </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <div class="card features">
+                        <div class="card-body">
+                            <div class="media">
+                                <span class="ti-lock gradient-fill ti-3x mr-3"></span>
+                                <div class="media-body">
+                                    <h4 class="card-title">Inspiration</h4>
+                                    <p class="card-text">As soon as you log into the app, you will be greeted with a personal message based on the time of day, as well as a famous inspirational quote to motivate or brighten up your day. This feature has been discontinued due to logistical difficulties. </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+    </div>
+    <!-- // end .section -->
+    
+    <div class="section light-bg" id="gallery">
+        <div class="container">
+            <div class="section-title">
+                <small>GALLERY</small>
+                <h3>How it works</h3>
+            </div>
+
+            <div class="img-gallery owl-carousel owl-theme">
+                <img src="public/images/screenshot1.png" alt="image">
+                <img src="public/images/screenshot2.png" alt="image">
+                <img src="public/images/screenshot3.png" alt="image">
+                <img src="public/images/screenshot4.png" alt="image">
+            </div>
+
+        </div>
+
+    </div>
+    <!-- // end .section -->
+
+
+    <div class="section light-bg" id="faq">
+        <div class="container">
+            <div class="section-title">
+                <small>FAQ</small>
+                <h3>Frequently Asked Questions</h3>
+            </div>
+
+            <div class="row pt-4">
+                <div class="col-md-6">
+                    <h4 class="mb-3">Is this product free of charge?</h4>
+                    <p class="light-font mb-5">Yes, downloading the app does not require any payments from the user. However, premium features that include more variety of "environments," including new locations and sounds, do. </p>
+                    <h4 class="mb-3">How do I toggle between different "environments"?</h4>
+                    <p class="light-font mb-5">On the home page, you can click on the bottom center button that says "Change," and it will allow you to cycle through your "environments." </p>
+
+                </div>
+                <div class="col-md-6">
+                    <h4 class="mb-3">How do I save an entry into my dream journal?</h4>
+                    <p class="light-font mb-5">Every 24 hours (starting 12:00 AM UTC), you can record and edit an entry into your dream journal. By clicking on the "Past" tab in the "Memo" modal, you can view all your past entries. </p>
+                    <h4 class="mb-3">Will there be more features added?</h4>
+                    <p class="light-font mb-5">As of now, progress on this project has been halted due to busy circumstances. <strong>If you are a developer who would like to contribute, please <a href="mailto:juliasliu@berkeley.edu">email</a> me.</strong></p>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- // end .section -->
+    
+
+    <div class="section bg-gradient" id="download">
+        <div class="container">
+            <div class="call-to-action">
+
+                <div class="box-icon"><span class="ti-mobile gradient-fill ti-3x"></span></div>
+                <h2>Download Anywhere</h2>
+                <p class="tagline">Available for all iOS devices. Optimized for iPhone 6s. </p>
+                <div class="my-4">
+
+                    <a href="https://itunes.apple.com/us/app/dreamemo/id1248719800?ls=1&mt=8" class="btn btn-light"><img src="public/images/appleicon.png" alt="icon"> App Store</a>
+                    <a href="#" class="btn btn-light"><img src="public/images/playicon.png" alt="icon"> Google play</a>
+                </div>
+                <p class="text-primary"><small><i>*Works on iOS 8.0+. Android version unavailable, sorry!</i></small></p>
+            </div>
+        </div>
+
+    </div>
+    <!-- // end .section -->
+    
+    <footer class="my-5 text-center">
+        <!-- Copyright removal is not prohibited! -->
+        <p class="mb-2"><small>COPYRIGHT © 2017-2019. ALL RIGHTS RESERVED. CREATED BY <a href="http://www.juliasliu.com">JULIA LIU</a></small></p>
+
+        <!-- <small>
+            <a href="#" class="m-2">PRESS</a>
+            <a href="#" class="m-2">TERMS</a>
+            <a href="#" class="m-2">PRIVACY</a>
+        </small> -->
+    </footer>
+
+    <!-- jQuery and Bootstrap -->
+    <script src="public/javascripts/jquery-3.2.1.min.js"></script>
+    <script src="public/javascripts/bootstrap.bundle.min.js"></script>
+    <!-- Plugins JS -->
+    <script src="public/javascripts/owl.carousel.min.js"></script>
+    <!-- Custom JS -->
+    <script src="public/javascripts/app.js"></script>
+    <script src="public/javascripts/script.js"></script>
+    
   </body>
 </html>
