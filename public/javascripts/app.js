@@ -13,11 +13,11 @@ app.config([
 function($stateProvider, $urlRouterProvider) {
 
 	$stateProvider
-	.state('index', {
+	.state('home', {
 		url: '/index',
 		templateUrl: '/index.html',
 		controller: 'MainCtrl'
 	});
 
-	$urlRouterProvider.otherwise('index');
+	$urlRouterProvider.otherwise('home');
 }]);
